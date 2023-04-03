@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>HTML Form Example</title>
+</head>
+<body>
+<h1>HTML Form Example</h1>
+<form>
+<fieldset>
+<legend>Personal Information</legend>
+<label for = "name">Name: </label>
+<input type = "text" id = "name" name = "name" required>
+<br>
+<label for = "email">Email: </label>
+<input type = "text" id = "email" name = "email" required>
+<br>
+<label for = "phone">Phone: </label>
+<input type = "tel" id = "phone" name = "phone" required>
+</fieldset>
+<fieldset>
+<legend>Gender</legend>
+<input type = "radio" id = "male" name = "gender" value = "male" required>
+<label for = "male">Male</label>
+<br>
+<input type = "radio" id = "female" name = "gender" value = "female" required>
+<label for = "female">Female</label>
+<br>
+<input type = "radio" id = "others" name = "gender" value = "others" required>
+<label for = "other">Others</label>
+</fieldset>
+<fieldset>
+<legend>Hobbies</legend>
+<input type = "checkbox" id = "hobby1" name = "hobbies" value = "reading">
+<label for = "hobby1">Reading</label>
+<br>
+<input type = "checkbox" id = "hobby2" name = "hobbies" value = "music">
+<label for = "hobby2">Listening to Music</label>
+<br>
+<input type = "checkbox" id = "hobby3" name = "hobbies" value = "sports">
+<label for = "hobby3">Playing Sports</label>
+</fieldset>
+<fieldset>
+<legend>Favorite Color</legend>
+<select id = "color" name = "color" required>
+<option value = "">Select a color</option>
+<option value = "red">Red</option>
+<option value = "bluelue">Blue</option>
+<option value = "green">Green</option>
+<option value = "yellow">Yellow</option>
+</select>
+</fieldset>
+<fieldset>
+<legend>Comments</legend>
+<textarea id = "comments" name = "comments" rows = "4" cols = "50"></textarea>
+</fieldset>
+<fieldset>
+<legend>Upload a file</legend>
+<input type = "file" id = "file" name = "file">
+</fieldset>
+<fieldset>
+<legend>Date and Time</legend>
+<label for = "date">Date: </label>
+<input type = "date" id = "date" name = "date">
+<br>
+<label for = "time">Time: </label>
+<input type = "time" id = "time" name = "time">
+</fieldset>
+<fieldset>
+<legend>Numerical Control</legend>
+<label for = "quantity">Quantity (between 1 and 10): </label>
+<input type = "numer" id = "quantity" name = "quantity" min = "1" max = "10">
+</fieldset>
+</html>
